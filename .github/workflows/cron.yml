@@ -1,14 +1,15 @@
-name: Run at 15 minutes.
+name: Run every 5 minutes
 
 on:
   schedule:
-    - cron: '15 * * * *'
+    - cron: '*/5 * * * *'
 
 jobs:
   cron:
-    name: Run at 15 minutes.
+    name: Run every five minutes
     runs-on: ubuntu-latest
 
     steps:
       - name: Hello world
         run: echo "Hello World"
+        
